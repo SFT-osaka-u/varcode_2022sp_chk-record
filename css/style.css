@@ -1,0 +1,56 @@
+#main{
+    width: 90%;
+    margin: auto;
+    border-bottom: solid #999999;
+}
+
+#record{
+    width:90%;
+    margin: auto;
+    padding-top: 16px;
+}
+
+#recordTbl{
+    margin-top: 16px;
+    width: 100%;
+}
+
+.mdl-data-table td, .mdl-data-table th{
+    height: auto;
+}
+
+.mdl-data-table td:first-of-type, .mdl-data-table th:first-of-type{
+    padding-left:12px
+}
+
+.mdl-data-table td:last-of-type, .mdl-data-table th:last-of-type{
+    padding-right:12px
+}
+
+.mdl-data-table__cell--non-numeric.mdl-data-table__cell--non-numeric{
+    padding: 8px;
+}
+
+.tblR1{
+    border-bottom-style:hidden;
+}
+
+.recIsbn{
+    width: 30%;
+    padding: 8px;
+}
+
+.recTitle{
+    width: 70%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    max-width: 0;
+}
+
+.mdl-radio{
+    display: block;
+}
+
+input{
+    width: 50px;
+}
