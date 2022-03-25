@@ -39,7 +39,7 @@ window.addEventListener('load', function (event) {
         if (first) {
             //選択された幅高さ
             w = video.videoWidth;
-            h = video.videoHeight;
+            h = video.videoWidth;
             //画面上の表示サイズ
             prev.style.width = (w / 2) + "px";
             prev.style.height = (h / 2) + "px";
