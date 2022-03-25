@@ -1,5 +1,6 @@
-.preview{
-    max-height: 120px;
+#screen{
+    margin: auto;
+    /* margin-left: 16px; */
 }
 
 #main{
