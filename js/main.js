@@ -125,7 +125,12 @@ window.addEventListener('load', function (event) {
 						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">`
 
 			if (dataObj.syllabus === "優良") {
-				document.body.style.backgroundColor = "#00A0E933";
+				async function changeBGC(){
+					document.body.style.backgroundColor = "#00A0E9aa";
+					await sleep(300);
+					document.body.style.backgroundColor = "#00A0E933";
+				}
+				changeBGC();
 				document.getElementById("trueAudio").play();
 				content = content + `<input type="radio" id="option-1" class="mdl-radio__button" name="options${rows}" value="優良" checked>
 								<span class="mdl-radio__label">優良</span>
@@ -138,7 +143,12 @@ window.addEventListener('load', function (event) {
 					</tr>`
 				target.insertAdjacentHTML('afterbegin', content);
 			} else if (dataObj.syllabus === "不良") {
-				document.body.style.backgroundColor = "#EB610033";
+				async function changeBGC(){
+					document.body.style.backgroundColor = "#EB6100aa";
+					await sleep(300);
+					document.body.style.backgroundColor = "#EB610033";
+				}
+				changeBGC();
 				document.getElementById("falseAudio").play();
 				content = content + `<input type="radio" id="option-1" class="mdl-radio__button" name="options${rows}" value="優良">
 								<span class="mdl-radio__label">優良</span>
@@ -248,4 +258,8 @@ function sendData(data) {
 			"Content-Type": "application/x-www-form-urlencoded",
 			"body": JSON.stringify(data)
 		});
+}
+
+function sleep(ms) {
+	return new Promise(resolve => setTimeout(resolve, ms));
 }
