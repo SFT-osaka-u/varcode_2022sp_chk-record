@@ -1,3 +1,7 @@
+.preview{
+    max-height: 120px;
+}
+
 #main{
     width: 90%;
     margin: auto;

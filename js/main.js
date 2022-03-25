@@ -24,7 +24,7 @@ window.addEventListener('load', function (event) {
     //カメラ使用の許可ダイアログが表示される
     navigator.mediaDevices.getUserMedia(
         //マイクはオフ, カメラの設定   背面カメラを希望する 640×480を希望する
-        { "audio": false, "video": { "facingMode": "environment", "width": { "ideal": 640 }, "height": { "ideal": 480 } } }
+        { "audio": false, "video": { "facingMode": "environment", "width": 640, "height": 480 } }
     ).then( //許可された場合
         function (stream) {
             video.srcObject = stream;
